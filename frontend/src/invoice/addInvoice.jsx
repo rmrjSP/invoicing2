@@ -217,6 +217,7 @@ const addInvoice = () => {
       <div className='lg:w-1/2'>
         <div className='mb-2 block'>
           <Label
+            
             htmlFor='labourCost'
             value='labourCost'
           />

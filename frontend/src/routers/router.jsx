@@ -28,9 +28,10 @@ const router = createBrowserRouter([
             element: <SearchInvoice/>
         },
         {
-            path: "/singleInvoice",
-            element: <SearchInvoice/>
-        }
+            path: '/singleInvoice/:id',
+            element: <SingleInvoice/>,
+            loader: ({params}) => fetch(`http://localhost:5000/invoice/${params.id}`)
+          }
 
     ]
     }
